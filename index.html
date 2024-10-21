@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fully Responsive Header</title>
+    <!-- Ionicons for icons -->
+    <link href="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    
+   <header id="js-header" class="w-header">
+
+                            
+        
+    
+        
+        
+    
+                            
+    <h1 class="hide" itemprop="headline" aria-level="1" title="MakeUseOf">MakeUseOf</h1>
+
+
+    <div class="wrapper main-navigation">
+        <div class="header-nav nav-menu">
+
+            <div class="nav-left">
+                <label class="menu-icon topnav-icon icon i-menu-new css-menu--toggle" for="side_menu"><span>Menu</span></label>
+                            </div>
+
+
+<div class="header-logo">
+    <a href="/" rel="home">
+        <picture>
+            <source srcset="/public/build/images/muo-logo-full-colored-light.svg?v=3.0" media="(prefers-color-scheme: dark)">
+            <img src="D:\img\Devtech_files\blob (96).jpeg" alt="MUO logo" title="MUO" class="logo-img" />
+        </picture>
+    </a>
+    <div id="login-button-header" class="login-button">
+   <a href="signin.html" class="nav-elements">
+    <div id="login-button-header" 
+         class="nav-link nav-link-user logged-out js-subscription-link "><img src="C:\Users\admin\Downloads\user (3).png" alt=""><span class="is-mobile-hidden"
+         onclick="handleNavigation()">
+        <span class="is-mobile-hidden">Sign in now</span>
+    </div>
+</a>
+
+</div>
+</div>
+
+
+
+            <!--<div class="header-logo">
+                <a href="/" rel="home">
+                    <picture>
+                        <source srcset="/public/build/images/muo-logo-full-colored-light.svg?v=3.0" media="(prefers-color-scheme: dark)">
+                        <img style="margin-left: 500px;" src="D:\img\Devtech_files\blob (10).jpeg" alt="MUO logo"
+                            title="MUO"
+                            width="200" height="64" />
+                            
+                    </picture>
+                </a>
+                 <a href="signin.html" >
+                <div id="login-button-header" style="visibility: visible; margin-left: 510px; cursor: pointer;" itemprop="url" onclick="document.getElementById('side-navigation') &amp;&amp; document.getElementById('side-navigation').classList.remove('is-open');" class="nav-link nav-link-user logged-out js-subscription-link icon i-user-full"><span class="is-mobile-hidden" >Sign in now</span></div>
+            </div>
+</a>-->
+            <div class="nav-right">
+
+                                                            
+                                    
+                
+                                                
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <input type="checkbox" id="side_menu" name="side_menu" class="css-menu--checkbox">
+    <div id="side-navigation" class="side-navigation side_menu">
+        <div class="side-navigation-topbar">
+            <label class="js-search-focus css-menu--checkbox-wrapper css-menu--toggle" for="search-menu">
+                <span class="menu-icon topbar-icon icon i-search-menu"></span>
+            </label>
+            <label class="menu-icon topbar-icon icon i-close-menu css-menu--toggle" for="side_menu"><span>Close</span></label>
+        </div>
+
+        
+
+
+
+
+    <nav id="menu-site" class="side-navigation-menu" role="navigation">
+
+        
+
+<ul class="side-navigation-list" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+        
+                                        <li class="sidenav-section">
+                    <ul class="side-navigation-list">
+                            
+                                        <li itemprop="name"
+                    class="w-sidenav-subnav sidenav-elements standard">
+                                                                <a href="/category/pc-mobile/"
+                            itemprop="url"
+                            class="sidenav-link js-sidebar-menu-nav-link standard"
+                        ><span>PC &amp; Mobile</span></a>
+                        <input type="checkbox" id="navItems-PC &amp; Mobile" name="navItems-PC &amp; Mobile" class="css-menu--checkbox">
+                        <label class="menu-icon sidenav-icon icon subnav-icon css-menu-toggle" for="navItems-PC &amp; Mobile"><span>Submenu</span></label>
+                                        
+
+                    <ul class="sidenav-subnav css-menu--target">
+                            
+                        <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/category/windows/"
+                    itemprop="url"
+                >
+                    <span>Windows</span>
+                </a>
+            </li>
+                                <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/category/mac/"
+                    itemprop="url"
+                >
+                    <span>Mac</span>
+                </a>
+            </li>
+                                <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/category/linux/"
+                    itemprop="url"
+                >
+                    <span>Linux</span>
+                </a>
+            </li>
+                                <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/category/google-android/"
+                    itemprop="url"
+                >
+                    <span>Android</span>
+                </a>
+            </li>
+                                <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/category/ios/"
+                    itemprop="url"
+                >
+                    <span>iOS</span>
+                </a>
+            </li>
+            
+
+                    </ul>
+                </li>
+                                                            <li itemprop="name"
+                    class="w-sidenav-subnav sidenav-elements standard">
+                                                                <a href="/category/web-based/"
+                            itemprop="url"
+                            class="sidenav-link js-sidebar-menu-nav-link standard"
+                        ><span>Internet</span></a>
+                        <input type="checkbox" id="navItems-Internet" name="navItems-Internet" class="css-menu--checkbox">
+                        <label class="menu-icon sidenav-icon icon subnav-icon css-menu-toggle" for="navItems-Internet"><span>Submenu</span></label>
+                                        
+
+                    <ul class="sidenav-subnav css-menu--target">
+                            
+                        <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/category/social-media/"
+                    itemprop="url"
+                >
+                    <span>Social Media</span>
+                </a>
+            </li>
+                                <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/category/security/"
+                    itemprop="url"
+                >
+                    <span>Security</span>
+                </a>
+            </li>
+                                <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/tag/vpn/"
+                    itemprop="url"
+                >
+                    <span>VPN</span>
+                </a>
+            </li>
+            
+
+                    </ul>
+                </li>
+                                                            <li itemprop="name"
+                    class="w-sidenav-subnav sidenav-elements standard">
+                                                                <a href="/category/productivity/"
+                            itemprop="url"
+                            class="sidenav-link js-sidebar-menu-nav-link standard"
+                        ><span>Productivity</span></a>
+                        <input type="checkbox" id="navItems-Productivity" name="navItems-Productivity" class="css-menu--checkbox">
+                        <label class="menu-icon sidenav-icon icon subnav-icon css-menu-toggle" for="navItems-Productivity"><span>Submenu</span></label>
+                                        
+
+                    <ul class="sidenav-subnav css-menu--target">
+                            
+                        <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/category/creative/"
+                    itemprop="url"
+                >
+                    <span>Creative</span>
+                </a>
+            </li>
+                                <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/category/diy-projects/"
+                    itemprop="url"
+                >
+                    <span>DIY</span>
+                </a>
+            </li>
+            
+
+                    </ul>
+                </li>
+                                                            <li itemprop="name"
+                    class="w-sidenav-subnav sidenav-elements standard">
+                                                                <a href="/category/lifestyle/"
+                            itemprop="url"
+                            class="sidenav-link js-sidebar-menu-nav-link standard"
+                        ><span>Lifestyle</span></a>
+                        <input type="checkbox" id="navItems-Lifestyle" name="navItems-Lifestyle" class="css-menu--checkbox">
+                        <label class="menu-icon sidenav-icon icon subnav-icon css-menu-toggle" for="navItems-Lifestyle"><span>Submenu</span></label>
+                                        
+
+                    <ul class="sidenav-subnav css-menu--target">
+                            
+                        <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/category/smart-home/"
+                    itemprop="url"
+                >
+                    <span>Smart Home</span>
+                </a>
+            </li>
+                                <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/category/games/"
+                    itemprop="url"
+                >
+                    <span>Gaming</span>
+                </a>
+            </li>
+                                <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/category/entertainment/"
+                    itemprop="url"
+                >
+                    <span>Entertainment</span>
+                </a>
+            </li>
+            
+
+                    </ul>
+                </li>
+                                                            <li itemprop="name"
+                    class="w-sidenav-subnav sidenav-elements standard">
+                                                                <a href="/category/technology-explained/"
+                            itemprop="url"
+                            class="sidenav-link js-sidebar-menu-nav-link standard"
+                        ><span>Tech Explained</span></a>
+                        <input type="checkbox" id="navItems-Tech Explained" name="navItems-Tech Explained" class="css-menu--checkbox">
+                        <label class="menu-icon sidenav-icon icon subnav-icon css-menu-toggle" for="navItems-Tech Explained"><span>Submenu</span></label>
+                                        
+
+                    <ul class="sidenav-subnav css-menu--target">
+                            
+                        <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/tag/artificial-intelligence/"
+                    itemprop="url"
+                >
+                    <span>Artificial Intelligence</span>
+                </a>
+            </li>
+                                <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/tag/pc-jargon-terminology/"
+                    itemprop="url"
+                >
+                    <span>Tech Jargon</span>
+                </a>
+            </li>
+                                <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/tag/computer-networking/"
+                    itemprop="url"
+                >
+                    <span>Networking</span>
+                </a>
+            </li>
+            
+
+                    </ul>
+                </li>
+                                            <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/category/news/"
+                    itemprop="url"
+                >
+                    <span>News</span>
+                </a>
+            </li>
+                                <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/category/product-reviews/"
+                    itemprop="url"
+                >
+                    <span>Reviews</span>
+                </a>
+            </li>
+                                <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/category/buying-guides/"
+                    itemprop="url"
+                >
+                    <span>Buying Guides</span>
+                </a>
+            </li>
+            
+
+                    </ul>
+                </li>
+                                                            <li class="sidenav-section">
+                    <ul class="side-navigation-list">
+                            
+                                        <li itemprop="name"
+                    class="w-sidenav-subnav sidenav-elements standard">
+                                                                <input type="checkbox" id="navItems-More" name="navItems-More" class="css-menu--checkbox">
+                        <label class="css-menu--checkbox-wrapper css-menu-toggle" for="navItems-More">
+                            <span class="sidenav-link standard">More</span>
+                            <span class="menu-icon sidenav-icon icon subnav-icon"><span>Submenu</span></span>
+                        </label>
+                                        
+
+                    <ul class="sidenav-subnav css-menu--target">
+                            
+                        <li class="sidenav-elements" itemprop="name">
+                <a class="sidenav-link js-sidebar-menu-nav-link standard"
+                    href="/tag/cheat-sheet/"
+                    itemprop="url"
+                >
+                    <span>Free Cheat Sheets</span>
+                </a>
+            </li>
+            
+
+                    </ul>
+                </li>
+                        
+
+                    </ul>
+                </li>
+                        
+
+</ul>
+        <ul id="menu-features" class="side-navigation-list">
+
+                                                <li class="sidenav-elements">
+                        <span class="menu-icon feature-icon icon i-user"></span>
+                        <a  href="#" id="login-button-sidemenu" class="sidenav-link standard js-subscription-link"><span>Sign in</span></a>
+                    </li>
+                            
+                        <li class="sidenav-elements">
+                <span class="menu-icon feature-icon icon i-menu-newsletter"></span>
+                <a href="/page/newsletter/" itemprop="url" class="sidenav-link standard"><span>Newsletter</span></a>
+            </li>
+            
+            <!--
+                             <li class="sidenav-elements">
+                    <span class="menu-icon feature-icon icon i-work"></span>
+                                            <a href="/work-with-us/" itemprop="url" class="sidenav-link emphasized"><span>Join Our Team</span></a>
+                                    </li>
+                        -->
+            <!--
+            <li class="sidenav-elements">
+                <span class="menu-icon feature-icon icon i-menu-advertise"></span>
+                <a href="/page/advertise/" itemprop="url" class="sidenav-link standard"><span>Advertise with us</span></a>
+            </li>
+            -->
+
+                                    
+        </ul>
+
+
+                                <div class="w-side-navigation-social">
+                <input type="checkbox" id="showMoreToggle" class="show-more-toggle-social">
+                <label for="showMoreToggle" class="show-more-label-social menu-icon sidenav-icon icon subnav-icon"></label>
+                <ul id="menu-follow" class="side-navigation-social">
+                                            <li class="social-elements"><a class="social-links  icon i-youtube js-follow-us-links"
+                                                    href="https://www.youtube.com/muotv" target="_blank"></a></li>
+                                            <li class="social-elements"><a class="social-links  icon i-facebook js-follow-us-links"
+                                                    href="https://www.facebook.com/muo.official" target="_blank"></a></li>
+                                            <li class="social-elements"><a class="social-links  icon i-instagram js-follow-us-links"
+                                                    href="https://www.instagram.com/makeuseof_official/" target="_blank"></a></li>
+                                            <li class="social-elements"><a class="social-links  icon i-twitter js-follow-us-links"
+                                                    href="https://twitter.com/MUO_official" target="_blank"></a></li>
+                                            <li class="social-elements"><a class="social-links  icon i-linkedin js-follow-us-links"
+                                                    href="https://www.linkedin.com/company/muoofficial" target="_blank"></a></li>
+                                            <li class="social-elements"><a class="social-links  icon i-pinterest js-follow-us-links"
+                                                    href="https://www.pinterest.com/muo_official/" target="_blank"></a></li>
+                                            <li class="social-elements"><a class="social-links  icon i-flipboard js-follow-us-links"
+                                                    href="https://flipboard.com/@muo_official" target="_blank"></a></li>
+                                            <li class="social-elements"><a class="social-links  icon i-feed js-follow-us-links"
+                                                    href="/feed/" target="_blank"></a></li>
+                                            <li class="social-elements"><a class="social-links  icon i-newspaper js-follow-us-links"
+                                                    href="/page/newsletter/" target="_blank"></a></li>
+                                    </ul>
+            </div>
+        
+
+    </nav>
+
+    <!--
+    <footer class="side-navigation-footer">
+                        <nav class="menu-legal">
+        <ul>
+                                                                                <li><a class="menu-join-our-content-team emphasized" href="/contributor/">Join Our Content Team</a></li>
+                                                                                                <li><a class="menu-home standard" href="/">Home</a></li>
+                                                                                                <li><a class="menu-contact-us standard" href="/contact/">Contact Us</a></li>
+                                                                                                <li><a class="menu-terms standard" href="/terms-of-use/">Terms</a></li>
+                                                                                                <li><a class="menu-privacy standard" href="/privacy-policy/">Privacy</a></li>
+                                                                                                <li><a class="menu-copyright standard" href="/dmca-take-down-policy/">Copyright</a></li>
+                                                                                                <li><a class="menu-about-us standard" href="/about/">About Us</a></li>
+                                                                                                <li><a class="menu-fact-checking-policy standard" href="/fact-checking-policy/">Fact Checking Policy</a></li>
+                                                                                                <li><a class="menu-corrections-policy standard" href="/corrections-policy/">Corrections Policy</a></li>
+                                                                                                <li><a class="menu-ethics-policy standard" href="/ethics-policy/">Ethics Policy</a></li>
+                                                                                                <li><a class="menu-ownership-policy standard" href="/ownership-funding-advertising-policy/">Ownership Policy</a></li>
+                                                                                                <li><a class="menu-partnership-disclaimer standard" href="/partnership-disclaimer/">Partnership Disclaimer</a></li>
+                                                                                                <li><a class="menu-owned-&amp;-operated-by-valnet-inc. standard" href="https://www.valnetinc.com/">Owned &amp; Operated by Valnet Inc.</a></li>
+                                    </ul>
+    </nav>
+
+                <div id="ccpa-link"></div>
+        <div class="footer-copy">
+            Copyright &copy; 2024 www.makeuseof.com
+        </div>
+    </footer>
+    -->
+</div>
+
+</header>
+
+
+ 
+                    <nav class="wrapper subnav-navigation" role="navigation">
+                <div class="header-nav subnav-menu">
+                    <span class="subnav-elements menu-trending">Trending</span>
+                                                <span class="subnav-elements icon">
+                            <a href="/tag/windows-11/" itemprop="url" class="subnav-link js-menu-nav-link js-header-menu-nav-link">Windows 11
+                            </a>
+                        </span>
+                                                <span class="subnav-elements icon">
+                            <a href="/tag/chatgpt/" itemprop="url" class="subnav-link js-menu-nav-link js-header-menu-nav-link">ChatGPT
+                            </a>
+                        </span>
+                                                <span class="subnav-elements icon">
+                            <a href="/tag/iphone-troubleshooting/" itemprop="url" class="subnav-link js-menu-nav-link js-header-menu-nav-link">iPhone Help
+                            </a>
+                        </span>
+                                                <span class="subnav-elements icon">
+                            <a href="/tag/facebook/" itemprop="url" class="subnav-link js-menu-nav-link js-header-menu-nav-link">Facebook Help
+                            </a>
+                        </span>
+                                                <span class="subnav-elements icon">
+                            <a href="/tag/scam/" itemprop="url" class="subnav-link js-menu-nav-link js-header-menu-nav-link">Avoiding Scams
+                            </a>
+                        </span>
+                                                <span class="subnav-elements icon">
+                            <a href="/top-emojis-explained-cheat-sheet/" itemprop="url" class="subnav-link js-menu-nav-link js-header-menu-nav-link">Emojis Explained
+                            </a>
+                        </span>
+                                                <span class="subnav-elements icon">
+                            <a href="/free-movie-streaming-sites-no-sign-up/" itemprop="url" class="subnav-link js-menu-nav-link js-header-menu-nav-link">Free Movie Streaming
+                            </a>
+                        </span>
+                                    </div>
+            </nav>
+        
+
+
+
+    
+
+
+<div class="w-ticker">
+    </div>
+
+<div class="w-header-search">
+    <input type="checkbox" id="search-menu" name="search-menu" class="css-menu--checkbox">
+    <div class="header-search-content css-menu--target">
+        <label class="header-search-exit icon i-close css-menu--toggle" for="search-menu"><span>Close</span></label>
+        <div class="header-search">
+            <form method="get" class="search-form js-searchBox icon i-search" id="searchform2"
+                action="/search/?q=">
+                <input id="js-search-input" type="text" name="q" class="input-text search-input" autocomplete="off" id="s2"
+                    placeholder="Search MUO" autofocus>
+            </form>
+        </div>
+    </div>
+</div>
+
+        
+
+</header>
+
+<!-- Link the script.js file just before the closing body tag -->
+<script src="script.js"></script>
+</body>
+</html>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Content goes here -->
+
+    <!--<label class="js-search-focus css-menu--checkbox-wrapper css-menu--toggle" for="search-menu">
+        <span class="menu-icon topbar-icon icon i-search-menu"></span>
+    </label>
+
+    <div class="sidebar">
+        <div class="close-btn">
+            <ion-icon name="close"></ion-icon>
+        </div>
+        <div class="search-btn">
+            <ion-icon name="search"></ion-icon>
+        </div>
+        <div class="menu">
+            <div class="item">
+                <a href="#" class="sub-btn" data-container="toggle-1">PC & MOBILE
+                    <div class="filling">
+                        <ion-icon name="add-sharp" class="dropdown" style="color: red;"></ion-icon>
+                    </div>
+                </a>
+                <div class="sub-menu" id="toggle-1">
+                    <h6><a href="#" class="sub-item" style="color: red;">Windows</a></h6>
+                    <h6><a href="#" class="sub-item" style="color: red;">Mac</a></h6>
+                    <h6><a href="#" class="sub-item" style="color: red;">Linux</a></h6>
+                    <h6><a href="#" class="sub-item" style="color: red;">Android</a></h6>
+                    <h6><a href="#" class="sub-item" style="color: red;">iOS</a></h6>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="item">
+                <a href="#" class="sub-btn" data-container="toggle-2">INTERNET
+                    <div class="filling">
+                        <ion-icon name="add-sharp" class="dropdown" style="color: red;"></ion-icon>
+                    </div>
+                </a>
+                <div class="sub-menu" id="toggle-2">
+                    <h6><a href="#" class="sub-item" style="color: red;">Social Media</a></h6>
+                    <h6><a href="#" class="sub-item" style="color: red;">Security</a></h6>
+                    <h6><a href="#" class="sub-item" style="color: red;">Programming</a></h6>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="item">
+                <a href="#" class="sub-btn" data-container="toggle-3">PRODUCTIVITY
+                    <div class="filling">
+                        <ion-icon name="add-sharp" class="dropdown" style="color: red;"></ion-icon>
+                    </div>
+                </a>
+                <div class="sub-menu" id="toggle-3">
+                    <h6><a href="#" class="sub-item" style="color: red;">Creative</a></h6>
+                    <h6><a href="#" class="sub-item" style="color: red;">DIY</a></h6>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="item">
+                <a href="#" class="sub-btn" data-container="toggle-4">LIFESTYLE
+                    <div class="filling">
+                        <ion-icon name="add-sharp" class="dropdown" style="color: red;"></ion-icon>
+                    </div>
+                </a>
+                <div class="sub-menu" id="toggle-4">
+                    <h6><a href="#" class="sub-item" style="color: red;">Smart Home</a></h6>
+                    <h6><a href="#" class="sub-item" style="color: red;">Gaming</a></h6>
+                    <h6><a href="#" class="sub-item" style="color: red;">Entertainment</a></h6>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="item">
+                <a href="#" class="sub-btn" data-container="toggle-5">TECH EXPLAINED
+                    <div class="filling">
+                        <ion-icon name="add-sharp" class="dropdown" style="color: red;"></ion-icon>
+                    </div>
+                </a>
+                <div class="sub-menu" id="toggle-5">
+                    <h6><a href="#" class="sub-item" style="color: red;">Artificial Intelligence</a></h6>
+                    <h6><a href="#" class="sub-item" style="color: red;">Tech Jargon</a></h6>
+                    <h6><a href="#" class="sub-item" style="color: red;">Networking</a></h6>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="item">
+                <a href="#">REVIEWS</a>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="item">
+                <a href="#">BUYING GUIDES</a>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="item">
+                <a href="#" class="sub-btn" data-container="toggle-6">MORE
+                    <div class="filling">
+                        <ion-icon name="add-sharp" class="dropdown" style="color: red;"></ion-icon>
+                    </div>
+                </a>
+                <div class="sub-menu" id="toggle-6">
+                    <h6><a href="#" class="sub-item" style="color: red;">Free Cheat Sheets</a></h6>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="item">
+    
+           
+    
+            <a href><img src="C:\Users\admin\Downloads\video.png" alt
+                    width="40px"></a>
+            <a href><img src="C:\Users\admin\Downloads\facebook.png" alt
+                    width="40px"></a>
+            <a href><img src="C:\Users\admin\Downloads\instagram (1).png" alt
+                    width="40px"></a>
+            <a href><img src="C:\Users\admin\Downloads\twitter.png" alt
+                    width="40px"></a>
+            <a href><img src="C:\Users\admin\Downloads\pinterest.png" alt
+                    width="40px"></a>
+            <a href><img
+                    src="C:\Users\admin\OneDrive\Desktop\844039_media_512x512.png"
+                    alt width="40px"></a>
+            <a href><img src="C:\Users\admin\Downloads\wifi-signal.png" alt
+                    width="40px"></a>
+    
+                </div>-->  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
